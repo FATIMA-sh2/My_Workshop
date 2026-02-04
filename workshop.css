@@ -1,0 +1,121 @@
+  
+        :root {
+            --sage: #000000;
+            --sand:  #efdef0;;
+            --clay: #f783f7;
+            --charcoal: #2a2a2a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--sand);
+            color: var(--charcoal);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem;
+            background: white;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--sage);
+            font-weight: bold;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        
+        .hero-split {
+            display: flex;
+            align-items: center;
+            min-height: 60vh;
+            padding: 4rem 10%;
+            gap: 5%;
+        }
+
+        .hero-content { flex: 1; }
+        
+        .hero-content h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            color: var(--sage);
+        }
+
+        
+        .learning-section {
+            padding: 4rem 10%;
+            background: white;
+        }
+
+        .section-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .lesson-card {
+            padding: 2.5rem;
+            background: var(--sand);
+            border-radius: 2px;
+            transition: 0.3s ease;
+        }
+
+        .lesson-card:hover {
+            background: var(--sage);
+            color: white;
+        }
+
+        .lesson-card h4 {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--clay);
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            background: var(--charcoal);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 2rem;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: var(--clay);
+        }
+
+        @media (max-width: 768px) {
+            .hero-split { flex-direction: column; text-align: center; }
+            .hero-content h1 { font-size: 2.5rem; }
+        }
+    
